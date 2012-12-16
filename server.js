@@ -66,11 +66,5 @@ app.get(/.*/, function(req, res) {
 app.listen(port, null);
 
 var Wargames = require(__dirname+'/lib/wargames');
-new Wargames(app, {
-	ircNetwork: 'irc.freenode.net'
-	, ircChannel: '#Node.js'
-	, ircBotNick: 'MrWarGames'
-	, ircUserName: 'MrWarGames'
-	, ircRealName: 'MrWarGames'
-	, cachePath: '/tmp/cache.json'
-});
+var settings = require(__dirname+'/settings').settings;
+new Wargames(app, settings);
