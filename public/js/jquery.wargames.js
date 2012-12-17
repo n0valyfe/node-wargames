@@ -353,7 +353,6 @@ WEB_SOCKET_SWF_LOCATION = '/swf/WebSocketMain.swf';
 					initWebsocketConnection();
 				}, 3000);
 			});
-			server.connect();
 		}
 		initWebsocketConnection();
 	}

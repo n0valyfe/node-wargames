@@ -14,7 +14,7 @@ var assets = assetManager({
 		, 'dataType': 'js'
 		, 'files': [
 			'http://code.jquery.com/jquery-latest.js'
-			, 'http://cdn.socket.io/stable/socket.io.js'
+			//, 'http://cdn.socket.io/stable/socket.io.js'
 			, 'raphael.js'
 			, 'map.js'
 			, 'jquery.wargames.js'
