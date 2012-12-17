@@ -300,17 +300,7 @@ WEB_SOCKET_SWF_LOCATION = '/swf/WebSocketMain.swf';
 		}
 
 		function initWebsocketConnection() {
-			var server = new io.Socket(null, {
-				'port': '#socketIoPort#'
-				, 'rememberTransport': true
-				, 'transports': [
-					'websocket'
-					, 'flashsocket'
-					, 'htmlfile'
-					, 'xhr-multipart'
-					, 'xhr-polling'
-				]
-			}); 
+      var server = io.connect();
 			server.on('message', function(msg) {
 				var data = JSON.parse(msg);
 				var lastActivityTimestamp;
@@ -368,3 +358,4 @@ WEB_SOCKET_SWF_LOCATION = '/swf/WebSocketMain.swf';
 		initWebsocketConnection();
 	}
 })();
+
