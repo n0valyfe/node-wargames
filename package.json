@@ -11,6 +11,7 @@
           , "connect-assetmanager": "*"
           , "connect-assetmanager-handlers": "*"
           , "socket.io": ">= 0.7.4"
+          , "ejs": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

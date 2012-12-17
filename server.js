@@ -66,5 +66,5 @@ app.get(/.*/, function(req, res) {
 app.listen(port, null);
 
 var Wargames = require(__dirname+'/lib/wargames');
-var settings = require(__dirname+'/settings').settings;
+var settings = require(__dirname+'/options').options;
 new Wargames(app, settings);
