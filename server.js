@@ -40,7 +40,7 @@ var assets = assetManager({
 	}
 });
 
-var port = 5656;
+var port = 3000;
 var app = module.exports = express.createServer();
 
 app.configure(function() {
@@ -66,5 +66,5 @@ app.get(/.*/, function(req, res) {
 app.listen(port, null);
 
 var Wargames = require(__dirname+'/lib/wargames');
-var settings = require(__dirname+'/options').options;
+var settings = require(__dirname+'/options').settings;
 new Wargames(app, settings);
